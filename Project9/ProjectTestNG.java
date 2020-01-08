@@ -45,9 +45,14 @@ public class ProjectTestNG {
 
 		driver.findElement(By.cssSelector("button[aria-label=\"LOGIN\"]")).click();
 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	
 
 		// Entrance Exam
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+
+		wait.until(ExpectedConditions.elementToBeClickable(
+				(By.xpath("//fa-icon[@class='collapsable-arrow ng-fa-icon ng-tns-c27-16 ng-star-inserted']"))));
+
 		driver.findElement(By.xpath("//fa-icon[@class='collapsable-arrow ng-fa-icon ng-tns-c27-16 ng-star-inserted']"))
 				.click();
 		// Registration Info
