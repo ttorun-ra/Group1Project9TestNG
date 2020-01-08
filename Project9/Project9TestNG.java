@@ -186,13 +186,6 @@ public class Project9TestNG {
 
 		driver.findElement(By.xpath("//ms-save-button[@caption='GENERAL.BUTTTON.SAVE']")).click();
 
-		WebElement fullName = driver.findElement(By.xpath("//tbody//tr//td[3][contains(text(),'Tugba Aydin')]"));
-
-		System.out.println(fullName.getText());
-
-		String expected = fullName.getText();
-
-		Assert.assertEquals(name, expected);
 
 	}
 
