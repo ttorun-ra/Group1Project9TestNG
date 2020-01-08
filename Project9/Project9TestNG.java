@@ -44,10 +44,6 @@ public class Project9TestNG {
 
 		driver.findElement(By.cssSelector("button[aria-label=\"LOGIN\"]")).click();
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-
-
 		WebDriverWait wait = new WebDriverWait(driver, 25);
 
 		
